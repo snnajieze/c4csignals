@@ -45,20 +45,27 @@
                         </li>
                     </ul>
 
-	                <blockquote class="text-md italic leading-8 my-5 p-5 text-indigo-600 font-semibold">We recommend AXI broker with the lowest commissions.</blockquote>
+	                <blockquote class="text-md italic leading-8 my-5 p-5 text-indigo-600 font-semibold">We recommend <a href="https://my.octafx.com/open-account/?refid=ib19973086">OctoFx</a>  or AXI broker with the lowest commissions.</blockquote>
 
 	                <p class="text-base leading-8 my-5">
 	                    Sign up with AXI here:
 	                </p>
 
 				    <ul class="flex flex-col gap-5 text-xl">
+                        <a href="https://my.octafx.com/open-account/?refid=ib19973086">
 				        <li class="border-b border-black rounded-sm cursor-pointer hover:text-white hover:bg-blue-600">
-				        	Click on this link to register: www.axi.com
+				        	OctoFx
 				        </li>
+                        </a>
+                        <a href="https://www.axi.com">
+                        <li class="border-b border-black rounded-sm cursor-pointer hover:text-white hover:bg-blue-600">
+                            AXI
+				        </li>
+                        </a>
 				    </ul>
 
 				    <br>
-				    <h3>Deposit your funds in AXI (your broker) </h3>
+				    <h3>Deposit your funds in OctoFx or AXI (your broker) </h3>
 
 
 				    <p class="text-base leading-8 my-5">

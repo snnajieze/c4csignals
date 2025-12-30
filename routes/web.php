@@ -83,3 +83,9 @@ Route::middleware([
         return view('dashboard');
     })->name('dashboard');
 });
+
+// Debug route to list all users
+Route::get('/debug/users', function () {
+    return \App\Models\User::all();
+});
+

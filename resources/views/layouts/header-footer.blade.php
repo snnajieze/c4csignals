@@ -43,7 +43,8 @@
         @endif
 
 
-        
+        @livewireStyles
+
     </head>
     <body class="items-center lg:justify-center min-h-screen flex-col">
         
@@ -256,6 +257,8 @@
         @if (Route::has('login'))
             <div class="h-14.5 hidden lg:block"></div>
         @endif
+        
+        @livewireScripts
     </body>
     <script>
         // Toggle between monthly and yearly pricing

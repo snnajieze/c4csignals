@@ -192,21 +192,11 @@
                     </div>
                 </div>
 
-                <!-- Price Breakdown -->
-                <div class="mt-6 space-y-3">
-                    <div class="flex justify-between text-gray-600">
-                        <span>Subtotal</span>
-                        <span>{{ $price ? '$'.$price : 'N/A' }}</span>
-                    </div>
-                    <div class="flex justify-between font-semibold text-gray-800">
-                        <span>Total</span>
-                        <span>{{ $price ? '$'.$price : 'N/A' }}</span>
-                    </div>
-                </div>
+                
 
-                <input type="hidden" name="plan_name" value="{{ $planName }}">
-                <input type="hidden" name="cycle" value="{{ ucfirst($cycle )}}">
-                <input type="hidden" name="price" value="{{ $price }}">
+                <livewire:checkout :plan="$planName" :price="$price" :cycle="$cycle" />
+
+                <!-- Plan details and final price are handled inside the Livewire component -->
 
 
                 <!-- Payment Options -->

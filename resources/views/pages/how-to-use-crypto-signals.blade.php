@@ -44,30 +44,36 @@ That said, we’ll begin with a brief introduction to ensure you have the right 
                         </li>
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            Bybit, Binance or Kucoin (available in App Store and Play Store) 
+                            <a href="https://www.bybit.com/invite?ref=K4PZX">Bybit</a>,&nbsp;<a href="https://www.binance.com/activity/referral-entry/CPA?ref=CPA_007L0T67P8">Binance</a> &nbsp;or &nbsp;<a href="https://www.kucoin.com/r/rf/QBSL59NE">Kucoin</a> &nbsp; (available in App Store and Play Store)
                         </li>
                     </ul>
 
-	                <blockquote class="text-md italic leading-8 my-5 p-5 text-indigo-600 font-semibold">We recommend Bybit or Kucoin as the best platform to follow our crypto signals because of its low commissions and it’s available in most countries.</blockquote>
+	                <blockquote class="text-md italic leading-8 my-5 p-5 text-indigo-600 font-semibold">We recommend <a href="https://www.bybit.com/invite?ref=K4PZX">Bybit</a>,&nbsp;<a href="https://www.binance.com/activity/referral-entry/CPA?ref=CPA_007L0T67P8">Binance</a> &nbsp;or &nbsp;<a href="https://www.kucoin.com/r/rf/QBSL59NE">Kucoin</a> &nbsp; as the best platform to follow our crypto signals because of its low commissions and it’s available in most countries.</blockquote>
 
 	                <p class="text-base leading-8 my-5">
 	                    Sign up to one of the exchanges here:
 	                </p>
 
 				    <ul class="flex flex-col gap-5 text-xl">
+						<a href="https://www.binance.com/activity/referral-entry/CPA?ref=CPA_007L0T67P8">
 				        <li class="border-b border-black rounded-sm cursor-pointer hover:text-white hover:bg-blue-600">
-				        	Binance – https://www.binance.com/
+				        	Binance
 				        </li>
+						</a>
+						<a href="https://www.bybit.com/invite?ref=K4PZX">
 				        <li class="border-b border-black rounded-sm cursor-pointer hover:text-white hover:bg-blue-600">
-				            Bybit – https://www.bybit.com/register
+				             Bybit
 				        </li>
+						</a>
+						<a href="https://www.kucoin.com/r/rf/QBSL59NE">
 				        <li class="border-b border-black rounded-sm cursor-pointer hover:text-white hover:bg-blue-600">
-				            Kucoin – https://www.kucoin.com/ucenter/signup
+				            Kucoin
 				        </li>
+						</a>
 				    </ul>
 
 				    <br>
-				    <h3>Deposit your funds in Bybit, Binance or Kucoin: </h3>
+				    <h3>Deposit your funds in <a href="https://www.bybit.com/invite?ref=K4PZX">Bybit</a>,&nbsp;<a href="https://www.binance.com/activity/referral-entry/CPA?ref=CPA_007L0T67P8">Binance</a> &nbsp;or &nbsp;<a href="https://www.kucoin.com/r/rf/QBSL59NE">Kucoin</a> &nbsp;: </h3>
 
 
 				    <p class="text-base leading-8 my-5">
@@ -141,7 +147,7 @@ That said, we’ll begin with a brief introduction to ensure you have the right 
                         </li>
                         <li class="flex items-center">
                             <svg class="w-5 h-5 text-green-500 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
-                            Entering Trades on Futures Platforms: Here’s how to manually enter trades on Bybit Futures, although steps are very similar on Kucoin and Binance also: 
+                            Entering Trades on Futures Platforms: Here’s how to manually enter trades on Bybit Futures, although steps are very similar on Kucoin and <a href="https://www.binance.com/activity/referral-entry/CPA?ref=CPA_007L0T67P8">Binance</a> also: 
                         </li>
 
                         <li class="flex items-center">

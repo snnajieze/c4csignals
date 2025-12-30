@@ -19,7 +19,7 @@
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 justify-items-center w-full max-w-3xl">
     <!-- Box 1 -->
     <a href="{{route('how-to-use-crypto-signals')}}">
-        <div class="w-48 sm:w-56 md:w-64 aspect-square bg-white rounded-xl shadow-lg flex items-center justify-center text-center p-4 bg-indigo-700">
+        <div class="w-48 sm:w-56 md:w-64 aspect-square bg-blue-500 rounded-xl shadow-lg flex items-center justify-center text-center p-4 bg-indigo-700">
           <div>
             <h3 class="text-lg font-semibold text-white">Crypto Signals</h3>
             <p class="text-sm text-white mt-2">Trading guild</p>
@@ -29,7 +29,7 @@
 
     <!-- Box 2 -->
     <a href="{{route('how-to-use-forex-signals')}}">
-        <div class="w-48 sm:w-56 md:w-64 aspect-square bg-white rounded-xl shadow-lg flex items-center justify-center text-center p-4 bg-indigo-700">
+        <div class="w-48 sm:w-56 md:w-64 aspect-square bg-blue-500 rounded-xl shadow-lg flex items-center justify-center text-center p-4 bg-indigo-700">
           <div>
             <h3 class="text-lg font-semibold text-white">Forex Signals</h3>
             <p class="text-sm text-white mt-2">Trading guild</p>

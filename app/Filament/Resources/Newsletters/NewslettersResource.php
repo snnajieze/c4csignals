@@ -16,7 +16,7 @@ use Filament\Tables\Table;
 
 class NewslettersResource extends Resource
 {
-    protected static ?string $model = Newsletters::class;
+    protected static ?string $model = Newsletter::class;
 
     protected static string|BackedEnum|null $navigationIcon = Heroicon::OutlinedRectangleStack;
 
