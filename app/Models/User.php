@@ -128,7 +128,7 @@ class User extends Authenticatable implements FilamentUser
         // return $this->is_admin === true;
         // return str_ends_with($this->email, 'nossh@gmail.com') && $this->hasVerifiedEmail();
         // return str_ends_with($this->email, 'nossh@gmail.com');
-        return str_ends_with($this->email, 'test@gmail.com');
+        return in_array($this->email, ['nosshamary@gmail.com', 'test@gmail.com']);
 
     }
 
