@@ -31,7 +31,7 @@ class CouponService
 
         // Check cycle eligibility
         if ($coupon->cycle && $coupon->cycle !== $cycle) {
-            return ['status' => 'cycle_mismatch', 'message' => 'Coupon is not valid for this cycle.'];
+            return ['status' => 'cycle_mismatch', 'message' => 'This Coupon can only be applied to yearly cycle.'];
         }
 
         if ($coupon->discount_type === 'percentage') {

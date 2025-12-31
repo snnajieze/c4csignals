@@ -53,8 +53,10 @@ Route::get('/nowpayment/cancel/{subscription}', [SubscriptionController::class, 
     Route::get('fortify-redirect', [FortifyRedirect::class, '__invoke'])
     ->name('fortify-redirect');
 
-    // Route::get('fortify-redirect', [SubscriptionController::class, 'invoke'])
-    // ->name('fortify-redirect');
+    Route::get('subscribe', [SubscriptionController::class, 'index'])
+    ->name('subscribe');
+    Route::post('create-subscription', [SubscriptionController::class, 'create'])
+    ->name('create-subscription');
 
 Route::get('/payment-initialize-error', function(){
     return view('payments/payment-initialize-error');
@@ -85,7 +87,7 @@ Route::middleware([
 });
 
 // Debug route to list all users
-Route::get('/debug/users', function () {
-    return \App\Models\User::all();
-});
+// Route::get('/debug/users', function () {
+//     return \App\Models\User::all();
+// });
 

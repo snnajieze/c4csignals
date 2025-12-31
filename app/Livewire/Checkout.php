@@ -66,7 +66,7 @@ class Checkout extends Component
                 'inactive' => 'Coupon is not active.',
                 'expired' => 'Coupon has expired.',
                 'usage_limit' => 'Coupon usage limit has been reached.',
-                'cycle_mismatch' => 'Coupon cannot be applied to the selected cycle.',
+                'cycle_mismatch' => 'This Coupon can only be applied to yearly cycle.',
             ];
 
             $this->addError('couponCode', $messages[$response['status']] ?? 'Invalid coupon.');

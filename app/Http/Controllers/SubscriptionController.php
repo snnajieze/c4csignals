@@ -5,9 +5,49 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use App\Models\Subscription;
+use Illuminate\Support\Str;
 
 class SubscriptionController extends Controller
 {
+    /**
+     * Show subscription plans page
+     */
+    public function index()
+    {
+        return view('pages.subscribe');
+    }
+    /**
+     * Create a new subscription record
+     */
+    public function create(Request $request)
+    {
+        $user = auth()->user();
+
+        $input = $request->validate([
+            'plan_name' => ['required', 'string'],
+            'cycle'     => ['required', 'string'],
+            'price'     => ['required', 'numeric'],
+        ]);
+
+        // Create the subscription for already registered user
+        $subscription = Subscription::create([
+            'id' => Str::uuid(), // or Str::random(10)
+            'user_id' => $user->id,
+            'plan_name' => $input['plan_name'],
+            'cycle' => $input['cycle'],
+            'price' => $input['price'],
+            'payment_status' => false,
+            'sub_status' => false,
+            'expiring_date' => now()->addMonth()->timestamp, // Example: 1-month expiry
+        ]);
+
+        // $subscription = \App\Models\Subscription::where('user_id', $user->id)->latest()->first();
+
+        if ($subscription) {
+            return redirect()->route('nowpayment.checkout', ['subscription_id' => $subscription->id]);
+        }
+        return redirect('/dashboard');
+    }
     /**
      * Redirect user to NowPayments checkout
      */
@@ -26,7 +66,7 @@ class SubscriptionController extends Controller
             'price_amount' => $subscription->price,
             'price_currency' => 'usd', // Adjust if needed
             'order_id' => $subscription->id,
-            'order_description' => ucfirst($subscription->cycle) . " subscription for {$subscription->plan_name} signals",
+            'order_description' => $subscription->cycle . " subscription for " . $subscription->plan_name . " signals",
             'ipn_callback_url' => route('nowpayment.callback'),
             'success_url' => route('nowpayment.success', $subscription->id),
             'cancel_url' => route('nowpayment.cancel', $subscription->id),
@@ -111,7 +151,6 @@ class SubscriptionController extends Controller
             // return redirect('nowpayment.checkout', ['subscription_id' => $subscription->id]);
 
             return redirect()->route('nowpayment.checkout', ['subscription_id' => $subscription->id]);
-
 
         }
 

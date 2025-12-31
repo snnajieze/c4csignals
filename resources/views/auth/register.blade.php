@@ -1,6 +1,6 @@
 @extends('layouts/header-footer')
 
-@section('title', 'Dashboard')
+@section('title', 'Register')
 
 @section('content')
 

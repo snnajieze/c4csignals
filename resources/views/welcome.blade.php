@@ -443,7 +443,9 @@
         </section>
 
         
-
+      @php
+          $route = auth()->check() ? 'subscribe' : 'register';
+      @endphp
 
 
         <div class="w-full max-w-7xl mx-auto p-6 lg:p-8" id="pricing">
@@ -474,7 +476,7 @@
                     <span class="pricing-duration text-gray-500 font-medium ml-2">/ month</span>
                   </div>
                   
-                  <a class="planButton" href="{{ route('register', ['plan' => 'plan1', 'cycle' => 'monthly', 'price' => 70]) }}">
+                  <a class="planButton" href="{{ route($route, ['plan' => 'plan1', 'cycle' => 'monthly', 'price' => 70]) }}">
                         <button class="w-full py-3 px-6 rounded-lg border border-primary-600 text-white font-medium transition-colors duration-300 bg-blue-600 hover:bg-blue-800 mb-6">Get Started</button>
                     </a>
                   
@@ -548,7 +550,7 @@
                     <span class="pricing-duration text-primary-100 font-medium text-gray-600 ml-2">/ month</span>
                   </div>
                   
-                  <a class="planButton" href="{{ route('register', ['plan' => 'plan2', 'cycle' => 'monthly', 'price' => 50]) }}">
+                  <a class="planButton" href="{{ route($route, ['plan' => 'plan2', 'cycle' => 'monthly', 'price' => 50]) }}">
                         <button class="w-full py-3 px-6 rounded-lg border border-primary-600 text-white font-medium transition-colors duration-300 bg-blue-600 hover:bg-blue-800 mb-6">Get Started</button>
                     </a>
                   
@@ -610,7 +612,7 @@
                     <span class="pricing-duration text-gray-500 font-medium ml-2">/ month</span>
                   </div>
                   
-                    <a class="planButton" href="{{ route('register', ['plan' => 'plan3', 'cycle' => 'monthly', 'price' => 100]) }}">
+                    <a class="planButton" href="{{ route($route, ['plan' => 'plan3', 'cycle' => 'monthly', 'price' => 100]) }}">
                         <button class="w-full py-3 px-6 rounded-lg border border-primary-600 text-white font-medium transition-colors duration-300 bg-blue-600 hover:bg-blue-800 mb-6">Get Started</button>
                     </a>
                   

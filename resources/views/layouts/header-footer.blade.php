@@ -282,15 +282,18 @@
             const priceElements = document.querySelectorAll('.text-4xl.md\\:text-5xl');
             const planButtons = document.querySelectorAll('.planButton'); // all <a> with planButton
 
+            @php
+                $route = auth()->check() ? 'subscribe' : 'register';
+            @endphp
             
             priceElements.forEach((el, i) => {
               if (index === 0) { // Monthly
                 el.textContent = prices[i];
-                planButtons[i].href = `/register?plan=plan${i+1}&cycle=monthly&price=${prices[i].replace('$', '')}`;
+                planButtons[i].href = `/{{$route}}?plan=plan${i+1}&cycle=monthly&price=${prices[i].replace('$', '')}`;
                 // planButtons[i].href = `/register?plan=${prices[i].replace('$', '')}`;
               } else { // Yearly
                 el.textContent = yearlyPrices[i];
-                planButtons[i].href = `/register?plan=plan${i+1}&cycle=yearly&price=${yearlyPrices[i].replace('$', '')}`;
+                planButtons[i].href = `/{{$route}}?plan=plan${i+1}&cycle=yearly&price=${yearlyPrices[i].replace('$', '')}`;
                 // planButtons[i].href = `/register?plan=${yearlyPrices[i].replace('$', '')}`;
               }
             });
