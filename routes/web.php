@@ -74,6 +74,11 @@ Route::get('/terms', [PagesController::class, 'show'])->name('terms')->defaults(
 Route::get('/risk-disclosure', [PagesController::class, 'show'])->name('risk')->defaults('page', 'risk');
 // Route::get('/{page}', [PagesController::class, 'show'])->whereIn('page', ['policy', 'terms', 'risk-disclosure']);
 
+// VIP ad landing (standalone page — no form, not in main nav)
+Route::get('/vip-ad', function () {
+    return view('vip.ad');
+})->name('vip.ad');
+
 
 
 Route::middleware([
