@@ -53,3 +53,4 @@ jobs:
             # Removed https:// from the URL to avoid issues with curl
             # Changed the app path instead of the host url
             # Chaged the correct project path
+            # Chaged the correct project path - added username to the path
