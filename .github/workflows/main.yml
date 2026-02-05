@@ -51,3 +51,4 @@ jobs:
             php artisan view:cache
 
             # Removed https:// from the URL to avoid issues with curl
+            # Changed the app path instead of the host url
