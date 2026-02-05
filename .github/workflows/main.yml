@@ -49,3 +49,5 @@ jobs:
             php artisan config:cache
             php artisan route:cache
             php artisan view:cache
+
+            # Removed https:// from the URL to avoid issues with curl
