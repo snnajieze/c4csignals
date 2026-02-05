@@ -65,11 +65,11 @@
         
         <header class="bg-white shadow-lg py-4 sticky top-0 z-50 rounded-b-lg">
           <!-- Add new year coupon code bar at the top that will flow with sticky header. bg color blue-500 text-white, center and bold -->
-          <div class="bg-blue-500 text-white text-center font-bold">
+          <!-- <div class="bg-blue-500 text-white text-center font-bold">
             <div class="container mx-auto px-4 py-2">
               New Year Coupon: Use code <span class="font-bold text-lg font-serif">Newyear2026</span> — get 50% off on all yearly plan. <a href="/#pricing" class="underline text-white ml-2">View Plans</a>
             </div>
-          </div>
+          </div> -->
 
           <div class="container mx-auto flex items-center justify-between px-4">
             <!-- Logo -->
