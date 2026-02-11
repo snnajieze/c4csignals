@@ -59,6 +59,16 @@
         
         <noscript> <img height="1" width="1" src="https://www.facebook.com/tr?id=1411128380520414&ev=PageView&noscript=1"/></noscript><!-- End Meta Pixel Code -->
 
+        <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-B3CP8QZQT3"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-B3CP8QZQT3');
+      </script>
+      
     </head>
     <body class="items-center lg:justify-center min-h-screen flex-col">
         
