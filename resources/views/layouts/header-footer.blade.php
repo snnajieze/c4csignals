@@ -262,7 +262,7 @@
                 <address class="not-italic text-gray-400">
                   <p>21 George Street</p>
                   <p>Edinburgh EH2 2PB</p>
-                  <p class="mt-2">Email: <a href="mailto:info@company.com" class="hover:text-white transition">hello@c4csignals.com</a></p>
+                  <p class="mt-2">Email: <a href="mailto:hello@c4csignals.com" class="hover:text-white transition">hello@c4csignals.com</a></p>
                   <p>Phone: <a href="tel:+44772777479" class="hover:text-white transition">+44 (772) 177-7479</a></p>
                 </address>
               </div>
